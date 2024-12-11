@@ -1,0 +1,85 @@
+/* Profile Page Container */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f6d365, #fda085); /* Vibrant gradient background */
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Heading Animation */
+.profile h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #34495e;
+  animation: slideInFromTop 1s ease-out;
+}
+
+/* Profile Details Container */
+.profile p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile p:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading Animation */
+.loading {
+  font-size: 1.5rem;
+  color: #ecf0f1;
+  animation: pulse 1.5s infinite;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}

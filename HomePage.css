@@ -1,0 +1,91 @@
+/* HomePage.css */
+.homepage {
+    font-family: Arial, sans-serif;
+    padding: 2em;
+  }
+  
+  .hero {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 3em 2em;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2em;
+  }
+  
+  .hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+  }
+  
+  .features {
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  
+  .features h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+  }
+  
+  .feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+  }
+  
+  .feature-item {
+    background-color: #f7f7f7;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5em;
+    color: #1abc9c;
+  }
+  
+  .feature-item p {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .call-to-action {
+    text-align: center;
+    padding: 2em;
+    background-color: #eee;
+    border-radius: 8px;
+  }
+  
+  .call-to-action h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+  
+  .call-to-action p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .call-to-action button {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .call-to-action button:hover {
+    background-color: #16a085;
+  }
+  

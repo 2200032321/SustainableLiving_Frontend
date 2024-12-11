@@ -1,0 +1,135 @@
+/* Main container for the Add Projects form */
+.add-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards; /* Fade-in effect for form */
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header styling */
+.add-projects h1 {
+  margin-bottom: 20px;
+  color: #1a3d7b; /* Dark Blue */
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards 0.2s; /* Delayed fade-in for header */
+}
+
+/* Fade-in effect for the header */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Form styling */
+.add-projects form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards 0.4s; /* Animation for form fields */
+}
+
+/* Label styling */
+.add-projects form label {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+/* Input and textarea styling */
+.add-projects form input,
+.add-projects form textarea {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background-color: #ffffff;
+}
+
+/* Focus effects for input fields */
+.add-projects form input:focus,
+.add-projects form textarea:focus {
+  border-color: #1a3d7b;
+  box-shadow: 0 0 5px rgba(26, 61, 123, 0.5);
+  transform: scale(1.05); /* Slight scaling effect on focus */
+}
+
+/* Button styling */
+.add-projects form button {
+  padding: 12px;
+  background-color: #1a3d7b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the button */
+.add-projects form button:hover {
+  background-color: #155a8a;
+  transform: translateY(-3px); /* Button rises on hover */
+}
+
+/* Button active effect (when clicked) */
+.add-projects form button:active {
+  transform: translateY(1px); /* Button presses down on click */
+}
+
+/* Success or error message styling */
+.message {
+  text-align: center;
+  font-size: 14px;
+  color: green;
+  opacity: 0;
+  animation: showMessage 0.5s ease-in-out forwards;
+  margin-top: 20px;
+}
+
+/* Animation for success/error message */
+@keyframes showMessage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Error message color */
+.message.error {
+  color: red;
+}
